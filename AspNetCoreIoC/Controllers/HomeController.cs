@@ -13,6 +13,7 @@ namespace AspNetCoreIoC.Controllers
 {
     public class HomeController : Controller
     {
+       // resolve multiple class file implemented by single interface 
         private readonly Func<UserLocation, ITaxService> taxService;
 
         private readonly ICustomerService _customerService;
